@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculaor Basic</title>
+</head>
+<body>
+    <p style="color: aqua;">Calculaor</p>
+    <p>
+        <button onclick="cals += 7; console.log(cals);">7</button>
+        <button onclick="cals += 8; console.log(cals);">8</button>
+        <button onclick="cals += 9; console.log(cals);">9</button>
+        <button onclick="cals += '-'; console.log(cals)">-</button>
+    </p>
+    <p>
+        <button onclick="cals += 4; console.log(cals)">4</button>
+        <button onclick="cals += 5; console.log(cals)">5</button>
+        <button onclick="cals += 6; console.log(cals)">6</button>
+        <button onclick="cals += '+'; console.log(cals)">+</button>
+    </p>
+    <p>
+        <button onclick="cals += 1; console.log(cals)">1</button>
+        <button onclick="cals += 2; console.log(cals)">2</button>
+        <button onclick="cals += 3; console.log(cals)">3</button>
+        <button onclick="cals += '*'; console.log(cals)">*</button>
+    </p>
+    <p>
+        <button onclick="cals += 0; console.log(cals)">0</button>
+        <button onclick="cals += '/'; console.log(cals)">/</button>
+        <button onclick="cals = ''; console.log('Cleared')">Clear</button>
+        <button onclick="cals = eval(cals); console.log(cals)">=</button>
+    </p>
+    <script>
+        let cals = '';
+    </script>
+</body>
+</html>

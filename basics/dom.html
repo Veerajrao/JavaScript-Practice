@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Examples</title>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button onclick="buttonEleClicked()" class="js-btn">Subscribe</button>
+    <script>
+        function buttonEleClicked(){
+            const btnElement = document.querySelector('.js-btn');
+            console.log(btnElement);
+            if (btnElement.innerText === 'Subscribe'){
+                btnElement.innerText = 'Subscribed';
+            }else {
+                btnElement.innerText = 'Subscribe';
+            }
+        }
+    </script>
+</body>
+</html>

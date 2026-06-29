@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTml>
+    <head>
+        <title>Amazon shipping cart</title>
+    </head>
+    <body>
+        <p>Amazon Shippin calculator</p>
+        Order under $40 has $10 shipping charges<br>
+        Order above $40 has 0 shipping charges
+        <br><br><input class="js-cost-input" placeholder="cost of a order" onkeydown="handleKeyEvent(event)"
+        >
+        <button onclick="calculatetotal()">Calculate</button>
+        <p class="js-total">Total amount </p>
+
+        <script>
+            function handleKeyEvent(event){
+                if (event.key === 'Enter'){
+                    calculatetotal();
+                }
+            }
+            function calculatetotal(){
+                const cost = document.querySelector('.js-cost-input');
+                let total = Number(cost.value);
+                if (total < 40){
+                    total= total + 10;
+                }
+                document.querySelector('.js-total').innerHTML = `${total}`;
+            }
+    </script>
+    </body>
+</HTml>
