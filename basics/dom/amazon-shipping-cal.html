@@ -2,14 +2,29 @@
 <HTml>
     <head>
         <title>Amazon shipping cart</title>
+        <style>
+            .input-css{
+                font-size: 15px;
+                padding: 10px;
+
+            }
+            .cal-btn{
+                border:  none;
+                background-color: green;
+                color: white;
+                font-size: 15px;
+                padding: 10px 15px;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
         <p>Amazon Shippin calculator</p>
         Order under $40 has $10 shipping charges<br>
         Order above $40 has 0 shipping charges
-        <br><br><input class="js-cost-input" placeholder="cost of a order" onkeydown="handleKeyEvent(event)"
+        <br><br><input class="js-cost-input input-css" placeholder="cost of a order" onkeydown="handleKeyEvent(event)"
         >
-        <button onclick="calculatetotal()">Calculate</button>
+        <button onclick="calculatetotal()" class="cal-btn">Calculate</button>
         <p class="js-total">Total amount </p>
 
         <script>

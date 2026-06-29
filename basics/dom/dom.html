@@ -2,18 +2,34 @@
 <html>
 <head>
 <title>DOM Examples</title>
+<style>
+    .sub-btn{
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .is-subscribed{
+        background-color: red;
+    }
+</style>
 </head>
 <body>
     <p>Youtube Subscribe Button</p>
-    <button onclick="buttonEleClicked()" class="js-btn">Subscribe</button>
+    <button onclick="buttonEleClicked()" class="js-btn sub-btn">Subscribe</button>
     <script>
         function buttonEleClicked(){
             const btnElement = document.querySelector('.js-btn');
             console.log(btnElement);
             if (btnElement.innerText === 'Subscribe'){
                 btnElement.innerText = 'Subscribed';
+                btnElement.classList.add('is-subscribed')
             }else {
                 btnElement.innerText = 'Subscribe';
+                btnElement.classList.remove('is-subscribed');
             }
         }
     </script>
