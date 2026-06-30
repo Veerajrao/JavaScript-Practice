@@ -1,7 +1,6 @@
-input{
-}
 body{
-    
+    background-color: grey;
+    margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -9,4 +8,33 @@ body{
 .grid-in{
     display: grid;
     grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+.grid-in{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+.name-todo,
+.due-date{
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    color: black;
+}
+.add-btn{
+    background-color: green;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.dlt-btn{
+    background-color: darkred;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
 }

@@ -6,7 +6,7 @@ function renderToDoList(){
         const todoobj = todolist[i];
         const { name, duedate } = todoobj;
         const html =
-         `<div>${name}</div><div>${duedate}</div><button onclick = "removeToDo(${i})">Delete</button>`;
+         `<div>${name}</div><div>${duedate}</div><button class="dlt-btn" onclick = "removeToDo(${i})">Delete</button>`;
         todolits += html;
     }
     document.querySelector('.js-todo-lists').innerHTML = todolits;
