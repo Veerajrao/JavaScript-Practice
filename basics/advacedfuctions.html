@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced functions</title>
+    </head>
+    <body>
+        <script>
+            const num = 2;
+            //function without function name because it is assigned to an variable
+            const function1 = function() { 
+                console.log('hello2');
+            };
+            console.log(function1);
+            console.log(typeof function1);
+            function1();
+            const obj1 = { //you can have function inside an object because a function can be an value
+                num: 2,
+                fun: function(){
+                    console.log("Hello inside an object");
+                }
+            };
+            obj1.fun();
+            function display(val){
+                console.log(val);
+            }
+            display(2);//passsing a value into function
+            function run(val2){
+                val2();
+            }
+            run(function(){ //passing an function inside as an argument of the function
+                console.log("hello3");
+            });
+
+            //setTimeout function of js
+            setTimeout(function() {
+                console.log("inside timeout");},2000);
+            console.log('After timeout line');
+            setInterval(function(){
+                console.log("inside interval");
+            },5000);
+            console.log('outside settimeout ad setinterval');
+        </script>
+    </body>
+</html>
