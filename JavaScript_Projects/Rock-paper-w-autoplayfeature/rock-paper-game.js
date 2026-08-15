@@ -84,7 +84,7 @@ let isautoplaying = false;
 let intervalId ;
 function autoplay(){
     if(!isautoplaying){
-        intervalId = setInterval(function(){
+        intervalId = setInterval(() =>{
             const playermove = pickcomputermove();
             movesPicked(playermove);
         },1000);
