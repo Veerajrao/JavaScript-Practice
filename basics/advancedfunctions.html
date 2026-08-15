@@ -5,6 +5,7 @@
     </head>
     <body>
         <button id="btn" onclick="loadingfun()">Subscribe</button>
+        <button onclick="" class="evt-btn">EventListner</button>
         <script>
             const num = 2;
             //function without function name because it is assigned to an variable
@@ -74,6 +75,14 @@
             //you can also write code without flower brackets if you have only one line of code
             const oneLine = () => console.log("inside function without flower brackets", 2+1);
             oneLine();
+
+            //eventListerner
+            const btn_event = document.querySelector(".evt-btn");
+            const btnevnt = () => {console.log("Button clicked")};
+            btn_event.addEventListener('click', btnevnt());//adding event listner
+            btn_event.removeEventListener('click',btnevnt());//removing an event listner
+            //adding multiple event listner to an single button
+            btn_event.addEventListener('click', () => console.log("Inside another event listner"));
 
         </script>
     </body>
