@@ -47,7 +47,7 @@
                 let btnn = document.getElementById("btn");
                 btnn.innerHTML = "Loading...";
                 btnn.disabled = true;
-                setTimeout(function(){
+                setTimeout(() => { //when you are passing the function inside another function as parameter you need to use arrow function
                      if(Subscribed == false){
                         btnn.innerHTML = "Subscribed";
                         Subscribed = true
@@ -58,6 +58,23 @@
                     btnn.disabled = false;
                 },3000);
             }
+
+            //arrow function
+            const afunction = () => {
+                console.log("Arrow functions");
+            };
+            afunction();
+            
+            //passing arguments to arrow functions without parenthesis
+            const oneParam = param => {
+                console.log(param + 1);
+            };
+            oneParam(2);
+
+            //you can also write code without flower brackets if you have only one line of code
+            const oneLine = () => console.log("inside function without flower brackets", 2+1);
+            oneLine();
+
         </script>
     </body>
 </html>
