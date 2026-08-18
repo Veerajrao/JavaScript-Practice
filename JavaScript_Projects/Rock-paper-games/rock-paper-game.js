@@ -12,6 +12,13 @@ document.querySelector('.js-btn-paper').addEventListener('click', () =>{
     movesPicked('Paper');
 })
 
+//adding eventlistner to for which we can play from keyboard
+
+document.body.addEventListener('keydown', () =>{
+    console.log('keydown');
+});
+
+
 function updatedScore(){
     const scrEle = document.querySelector('.display-scr');
      scrEle.innerHTML = `Wins: ${score.wins} Losses: ${score.losses} Tie:${score.ties}`;

@@ -83,6 +83,11 @@
             btn_event.removeEventListener('click',btnevnt());//removing an event listner
             //adding multiple event listner to an single button
             btn_event.addEventListener('click', () => console.log("Inside another event listner"));
+            
+            //adding event listner using event object from which we can play or perform a event using keyboard
+            document.body.addEventListener('keydown', (event) =>{
+                console.log(event.key); //tells us which key we pressed in out keyboard
+            });
 
         </script>
     </body>
