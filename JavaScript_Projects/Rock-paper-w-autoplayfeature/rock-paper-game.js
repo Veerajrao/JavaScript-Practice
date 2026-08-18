@@ -1,5 +1,8 @@
 let cm = '';
 let score = JSON.parse(localStorage.getItem('score')) || {wins: 0,losses :0,ties: 0};
+document.querySelector('.js-btn-rock').addEventListener('click', () => {
+    movesPicked('rock');
+});
 
 function updatedScore(){
     const scrEle = document.querySelector('.display-scr');
@@ -84,7 +87,7 @@ let isautoplaying = false;
 let intervalId ;
 function autoplay(){
     if(!isautoplaying){
-        intervalId = setInterval(() =>{
+        intervalId = setInterval(() => {
             const playermove = pickcomputermove();
             movesPicked(playermove);
         },1000);

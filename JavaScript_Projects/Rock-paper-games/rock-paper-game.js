@@ -1,6 +1,17 @@
 let cm = '';
 let score = JSON.parse(localStorage.getItem('score')) || {wins: 0,losses :0,ties: 0};
 
+//adding event listner to an button
+document.querySelector('.js-btn-rock') .addEventListener('click', () =>{
+    movesPicked('Rock');
+})
+document.querySelector('.js-btn-scissors').addEventListener('click', () =>{
+    movesPicked('Scissors');
+})
+document.querySelector('.js-btn-paper').addEventListener('click', () =>{
+    movesPicked('Paper');
+})
+
 function updatedScore(){
     const scrEle = document.querySelector('.display-scr');
      scrEle.innerHTML = `Wins: ${score.wins} Losses: ${score.losses} Tie:${score.ties}`;
