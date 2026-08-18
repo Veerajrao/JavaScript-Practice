@@ -14,8 +14,14 @@ document.querySelector('.js-btn-paper').addEventListener('click', () =>{
 
 //adding eventlistner to for which we can play from keyboard
 
-document.body.addEventListener('keydown', () =>{
-    console.log('keydown');
+document.body.addEventListener('keydown', (event) =>{
+    if (event.key === 'r'){
+        movesPicked('Rock');
+    } else if (event.key === 'p'){
+        movesPicked('Paper');
+    }else if (event.key === 's'){
+        movesPicked('Scissors');
+    }
 });
 
 
