@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-commerce Site</title>
+        <link rel="stylesheet" href="../styling/head.css">
+        <link rel="stylesheet" href="../styling/general.css">
+        <link rel="stylesheet" href="../styling/prdct.css">
+    </head>
+    <body>
+        <div class="header-sec">
+            <div class="left-sec-logo">
+                <img src="../resoruces/elogo.png" class="logo">
+            </div>
+            <div class="middle-srch">
+                <input type="search" class="search-bar" placeholder="Search">
+                <button class="srch-btn">
+                    <img src="../resoruces/search.png" class="srch-logo">
+                </button>
+            </div>
+            <div class="right-sec-pfp">
+                <a class="orders-link header-link" href="orders.html">
+                    <span class="returns-text">Returns</span>
+                    <span class="orders-text">& Orders</span>
+                </a>
+                <a class="cart-link header-link" href="checkout.html">
+                    <img src="../resoruces/shopping-cart.png" class="cart-img">
+                    <div class="cart-quantity js-cart-quantity">0</div>
+                    <div class="cart-text">Cart</div>
+                </a>
+            </div>
+        </div>
+        <div class="mbody">
+            <div class="products-grid js-products-grid">
+                <div class="product-container">
+                    <div class="product-img">
+                        <img class="prdct-img" src="../resoruces/headphones.jpg">
+                    </div>
+                    <div class="prdct-name limit-text-to-2-lines">
+                        BoAT headphones with noise-cancellation 
+                    </div>
+                    <div class="product-rating">
+                        <img class="rating-img" src="../resoruces/4star.png">
+                        <div class="rating-count">87</div>
+                    </div>
+                    <div class="prdct-price">&#8377;999</div>
+                    <div class="prdct-qty">
+                        <select>
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="prdct-spacer"></div>
+                    <div class="add-cart">
+                        <img>Added
+                    </div>
+                    <button class="add-to-cart-button button-primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-container"></div>
+            </div>
+        </div>
+        <div class="footer-sec"></div>
+    </body>
+</html>
